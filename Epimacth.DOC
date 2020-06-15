@@ -1,0 +1,17 @@
+Login:(POST)
+url: http://www.epimatch.club/login
+request: (as JSON type)
+{
+	"name": "Damien Gaudin"
+}
+Response: 
+{"status":"SUCCESS","data":{"connections":263,"created_at":"Wed, 10 Jun 2020 13:13:39 GMT","email":null,"headline":"Software Engineer at Continental Engineering Services","id":114,"image":"https://media-exp1.licdn.com/dms/image/C5603AQGNdxTzjMWmmQ/profile-displayphoto-shrink_200_200/0?e=1597276800&v=beta&t=L2US24ZlUqSDbS6P19_Vwo0st-qL0KiKGaa-QjQ_3D0","location":"Lyon 05, Rhône-Alpes, France","name":"Damien Gaudin","phone":null,"school":"Ecole normale supérieure de Lyon","updated_at":"Wed, 10 Jun 2020 13:13:39 GMT","url":"/in/damien-gaudin"},"message":"Login Successfull"}
+
+
+Search: (GET)
+Request:
+ https://www.epimatch.club/search/Damien Gaudin/Ecole normale supérieure de Lyon  
+(using logged username and school name for search) 
+
+Response: 
+{"status":"SUCCESS","data":[{"connections":263,"created_at":"Wed, 10 Jun 2020 13:13:39 GMT","email":null,"headline":"Software Engineer at Continental Engineering Services","id":114,"image":"https://media-exp1.licdn.com/dms/image/C5603AQGNdxTzjMWmmQ/profile-displayphoto-shrink_200_200/0?e=1597276800&v=beta&t=L2US24ZlUqSDbS6P19_Vwo0st-qL0KiKGaa-QjQ_3D0","location":"Lyon 05, Rhône-Alpes, France","name":"Damien Gaudin","phone":null,"school":"Ecole normale supérieure de Lyon","updated_at":"Wed, 10 Jun 2020 13:13:39 GMT","url":"/in/damien-gaudin"}]}
